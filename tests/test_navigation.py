@@ -1,7 +1,6 @@
 import allure
 from pages.main_page import MainPage
 class TestNavigation:
-
     @allure.title('Проверка навигации при нажатии на лого "Яндекс"')
     @allure.description('Проверка перехода на страницу "Яндекс.Дзен" при нажатии на лого "Яндекс"')
     def test_click_yandex_logo(self, driver):

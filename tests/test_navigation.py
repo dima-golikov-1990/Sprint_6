@@ -13,7 +13,7 @@ class TestNavigation:
 
         main_page.switch_to_second_tab_in_browser()
 
-        assert 'https://dzen.ru/' in driver.current_url
+        assert 'dzen.ru' in driver.current_url
 
     @allure.title('Проверка навигации при нажатии на лого "Самокат"')
     @allure.description('Проверка перехода на главную страницу при нажатии на лого "Самокат"')

@@ -21,6 +21,8 @@ class OrderPageLocators:
     LOCATOR_BUTTON_ORDER = (By.XPATH, "(//button[text()='Заказать'])[2]")
     LOCATOR_BUTTON_YES = (By.XPATH, "//button[text()='Да']") # кнопка "Да"
 
+    LOCATOR_ORDER_NUMBER = (By.XPATH, "//*[text()='Номер заказа']")
+
     def get_station_locator(self, station):
         return (By.XPATH, "//*[text()='" + station + "']")
 
@@ -32,3 +34,4 @@ class OrderPageLocators:
 
     def get_color_locator(self, color):
         return (By.XPATH, "//label[text()='" + color + "']")
+

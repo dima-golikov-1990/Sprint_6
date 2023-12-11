@@ -40,6 +40,9 @@ class TestOrder:
         order_page.modal_window_is_visible()
 
         order_page.click_button_yes()
+
+        assert order_page.order_number_is_visible() == True
+
     @allure.title('Заказ самоката с использованием кнопки "Заказать" в нижней части страницы')
     @allure.description('Позитивный сценарий заказа самоката с использованием кнопки "Заказать" в нижней части страницы')
     def test_order_scooter_in_page_bottom(self, driver):
@@ -78,3 +81,5 @@ class TestOrder:
         order_page.modal_window_is_visible()
 
         order_page.click_button_yes()
+
+        assert order_page.order_number_is_visible() == True

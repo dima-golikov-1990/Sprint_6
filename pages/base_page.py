@@ -22,3 +22,8 @@ class BasePage:
     @allure.step('Переключиться на вторую вкладку браузера')
     def switch_to_second_tab_in_browser(self):
         self.driver.switch_to.window(self.driver.window_handles[-1])
+
+    @allure.step('Проскроллить страницу до элемента')
+    def scroll_to(self, element):
+        self.driver.execute_script("arguments[0].scrollIntoView();", element)
+
